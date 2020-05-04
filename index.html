@@ -12,14 +12,13 @@
 </head>
 
 <body>
-    
+  <center>
+
+    <div id="p5Div"> 
+
+    </div>
      <div class="container">
-       <center>
 
-       
-      <div id="p5Div"> 
-
-       </div>
       <p>space = clear</p>
       <p>KeyBoard press = green circle</p>
       <a href = "https://www.youtube.com/watch?v=Acjf66Qdj2U">
@@ -34,7 +33,7 @@
     <script>
         // happens ONCE
 function setup() {
-  var c = createCanvas(600, 400);
+  var c = createCanvas(windowWidth, windowHeight - 129);
   c.parent('p5Div');
   background(250, 250, 100);
 }
@@ -61,5 +60,3 @@ background(250, 250, 100);
     
     
 </body>
-
-
