@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <head>
-    <script src="./p5.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  
+  <link rel="stylesheet" type="text/css" href="./bootstrap.css">
+
+  <script src="./p5.js"></script>
     <title>
      Game01   
 
@@ -10,12 +13,29 @@
 
 <body>
     
-    <p>space = clear</p>
-    <p>KeyBoard press = green circle</p>
+     <div class="container">
+       <center>
+
+       
+      <div id="p5Div"> 
+
+       </div>
+      <p>space = clear</p>
+      <p>KeyBoard press = green circle</p>
+      <a href = "https://www.youtube.com/watch?v=Acjf66Qdj2U">
+        <p>
+          Tutorial!
+        </p>   
+       </a>
+      </center>
+</div>
+
+    
     <script>
         // happens ONCE
 function setup() {
-  createCanvas(600, 400);
+  var c = createCanvas(600, 400);
+  c.parent('p5Div');
   background(250, 250, 100);
 }
 
@@ -38,11 +58,8 @@ function keyPressed(){
 background(250, 250, 100);
 }
     </script>
-    <a href = "https://www.youtube.com/watch?v=Acjf66Qdj2U">
-     <p>
-       Tutorial!
-     </p>   
-    </a>
+    
     
 </body>
+
 
