@@ -19,7 +19,7 @@
     </div>
      <div class="container">
 
-      <p>space = clear</p>
+      <p>mouse pressed = painting</p>
       <p>KeyBoard press = green circle</p>
       <a href = "https://www.youtube.com/watch?v=Acjf66Qdj2U">
         <p>
@@ -33,30 +33,28 @@
     <script>
         // happens ONCE
 function setup() {
-  var c = createCanvas(windowWidth, windowHeight - 139);
+  var c = createCanvas(windowWidth, windowHeight - 129);
   c.parent('p5Div');
   background(250, 250, 100);
 }
 
 //LOOP
 function draw() {
-  noStroke();
-  fill(250, 200, 200, 70);
-  ellipse(mouseX, mouseY, 25, 25);
-
+if (mouseIsPressed) {
+    fill(250, 200, 200, 70);
+    noStroke();
+    ellipse(mouseX, mouseY, 30, 30);
 }
-
-function mousePressed(){
-  noStroke();
-  fill(0, 200, 0);
-  ellipse(mouseX, mouseY, 50, 50);
-  }
+}
 
 //when mouse is pressed
 function keyPressed(){
-background(250, 250, 100);
+    fill(0, 250, 0);
+    noStroke();
+    ellipse(mouseX, mouseY, 30, 30);
 }
     </script>
     
     
 </body>
+
