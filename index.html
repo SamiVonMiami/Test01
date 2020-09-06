@@ -32,9 +32,8 @@
     
     <script>
         // happens ONCE
-function setup() {
-  var c = createCanvas(windowWidth, windowHeight - 129);
-  c.parent('p5Div');
+        function setup() {
+  createCanvas(600, 400);
   background(250, 250, 100);
 }
 
@@ -51,10 +50,9 @@ if (mouseIsPressed) {
 function keyPressed(){
     fill(0, 250, 0);
     noStroke();
-    ellipse(mouseX, mouseY, 30, 30);
+    background(250, 250, 100);
 }
     </script>
     
     
 </body>
-
